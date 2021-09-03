@@ -13,7 +13,7 @@
                                     class="fas fa-box-open"></i> <span>Master Data</span></a>
                             <ul class="dropdown-menu">
                                 <li class="{{ ($active == 'buku') ? 'active' : '' }}"><a class="nav-link" href="{{ route('buku') }}">CRUD Standart</a></li>
-                                <li><a class="nav-link" href="layout-transparent.html">CRUD Modal</a></li>
+                                <li class="{{ ($active == 'siswa') ? 'active' : '' }}"><a class="nav-link" href="{{ route('siswa') }}">CRUD Modal</a></li>
                             </ul>
                         </li>
                         

@@ -14,12 +14,13 @@
     <script src="{{ asset('backend/assets/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
     <script src="{{ asset('backend/assets/plugins/datatables-responsive/js/dataTables.responsive.min.js') }}"></script>
     <script src="{{ asset('backend/assets/plugins/datatables-responsive/js/responsive.bootstrap4.min.js') }}"></script>
-
-    <!-- Template JS File -->
-    <script src="{{ asset('backend/assets/js/scripts.js')}}"></script>
-    <script src="{{ asset('backend/assets/js/custom.js')}}"></script>
+    <script src="http://cdn.datatables.net/plug-ins/1.10.19/dataRender/datetime.js"></script>
 
     <!-- Select2 -->
     <script src="{{ asset('backend/assets/plugins/select2/js/select2.full.min.js')}}"></script>
     <!-- Summernote -->
     <script src="{{ asset('backend/assets/plugins/summernote/summernote-bs4.min.js')}}"></script>
+    
+    <!-- Template JS File -->
+    <script src="{{ asset('backend/assets/js/scripts.js')}}"></script>
+    <script src="{{ asset('backend/assets/js/custom.js')}}"></script>
