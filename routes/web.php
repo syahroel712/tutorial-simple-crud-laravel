@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\Backend\DashboardController;
 use App\Http\Controllers\Backend\BukuController;
+use App\Http\Controllers\Backend\SiswaController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -39,7 +40,14 @@ Route::prefix('app-admin')->group(function () {
         Route::get('/buku/{buku}', [BukuController::class, 'edit'])->name('buku.edit');
         Route::put('/buku/{buku}', [BukuController::class, 'update'])->name('buku.update');
         Route::delete('/buku/{buku}', [BukuController::class, 'destroy'])->name('buku.delete');
-
+        
+        // siswa
+        Route::get('/siswa', [SiswaController::class, 'index'])->name('siswa');
+        Route::post('/siswa', [SiswaController::class, 'store'])->name('siswa.save');
+        Route::post('/siswa-edit', [SiswaController::class, 'edit'])->name('siswa.edit');
+        Route::delete('/siswa/{siswa}', [SiswaController::class, 'destroy'])->name('siswa.delete');
+        // api siswa
+        Route::get('siswa-list', [SiswaController::class, 'apiSiswa'])->name('siswa.list');
     });
 
 });
